@@ -1,0 +1,16 @@
+h2{
+    margin-right: auto;
+    color: #61DAFB;
+    font-size: 35px;
+}
+img{
+    width: 10%;
+    margin-right: 15px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #343434;
+    padding: 5px 10px;
+    color: white;
+}

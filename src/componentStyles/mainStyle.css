@@ -1,0 +1,13 @@
+main{
+    padding: 50px;
+    color: white;
+}
+main > ul > li{
+padding:5px;
+font-weight: 50%;
+font-size: 20px;
+}
+li::marker{
+    color:#61DAFB;
+    font-size: 2.5rem;
+}
