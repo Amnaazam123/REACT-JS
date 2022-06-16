@@ -1,31 +1,50 @@
-# title(){return this.options.title||this.options.name}
+## ✨✨✨✨✨✨✨✨✨✨✨✨✨   REACT JS  ✨✨✨✨✨✨✨✨✨✨✨✨✨
+Why React JS? <br>
+💁‍♀️ Its composable (Threr are components in React, which you all put together to create something large.)
+```
+function MainContent() {
+    return (
+        <h1>I'm learning React!</h1>
+    )
+}
 
-Quick start:
+ReactDOM.render(
+    <div>
+        <MainContent />
+    </div>,
+    document.getElementById("root")
+)
+```
+💁‍♀️ Its declarative (Just tell me what to do, I will do it for you)
+
+## Declarative Way:
+```
+ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
+```
+## Imperative Way:
+```
+ const h1 = document.createElement("h1")
+ h1.textContent = "Hello, React!"
+ h1.className = "header"
+ document.getElementById("root").append(h1)
 
 ```
-$ yarn # npm install
-$ yarn build # npm run build
-````
+## JSX
+```
+const page = (
+    <div>
+        <h1 className="header">This is JSX</h1>
+        <p>This is a paragraph</p>
+    </div>
+)
 
-## Development
-
-Run Webpack in watch-mode to continually compile the JavaScript as you work:
+ReactDOM.render(
+    page,
+    document.getElementById("root")
+)
 
 ```
-$ yarn watch # npm run watch
-```
 
-## Supporting Scrimba
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
 
-	It would also mean the world to us if you share the courses.  
-
-Happy Coding!
